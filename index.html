@@ -421,10 +421,10 @@
                                                 </div>
                                             </div>
                                             <div class="FlexBox_flex__q0PvO TicketCard_imageBlur__X10OJ" role="presentation">
-                                                <img id="bgImage" alt="背景画像" loading="lazy" decoding="async" data-nimg="fill" sizes="384px" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent;" src="./チケット詳細 _ TicketDives_files/wWGrU5hKC34GVkZquhEE_581811_1768303485822.webp">
+                                                <img id="bgImage" alt="背景画像" loading="lazy" decoding="async" data-nimg="fill" sizes="384px" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent;" src="./チケット詳細 _ TicketDives_files/VKH7oL4gezijY2J1WnUj_314388_1774603628251.webp">
                                             </div>
                                             <div class="FlexBox_flex__q0PvO TicketItemImage_imageContainer__A8VGl" role="presentation" style="justify-content: center; align-items: center; height: 100%; display: none;" id="eventImageContainer">
-                                                <img id="eventImage" class="TicketItemImage_image__i3yYC" style="height: 100%;" src="./チケット詳細 _ TicketDives_files/wWGrU5hKC34GVkZquhEE_581811_1768303485822.webp">
+                                                <img id="eventImage" class="TicketItemImage_image__i3yYC" style="height: 100%;" src="./チケット詳細 _ TicketDives_files/VKH7oL4gezijY2J1WnUj_314388_1774603628251.webp">
                                             </div>
                                             <div class="FlexBox_flex__q0PvO TicketCenterImage_qrContainer__2Uipr" role="presentation" style="justify-content: center; align-items: center; display: flex;" id="qrContainer">
                                                 <img src="./チケット詳細 _ TicketDives_files/diveqr.png" id="qrCode">
@@ -566,11 +566,11 @@
         </div>
     </div>
     <script>
-        const ticketInfoBase = {"eventName":"『ティラミス関西ツアー『君との想い出スケッチ』〜来海・ひかりproduce 和歌山編〜』","eventImage":"b3dqzVeER9QYiVs21xvp_834211_1773133417184.webp","_date":{"year":2026,"month":4,"day":11},"openVenue":"17:00","startTime":"17:30","venueName":"和歌山CLUB GATE","ticketType":"前方チケット","prefix":"A",eventInfo: ""};
+        const ticketInfoBase = {"eventName":"夜光性アミューズ5周年記念東名阪TOUR 『NIGHT PARADE 2026』  ","eventImage":"VKH7oL4gezijY2J1WnUj_555258_1766106884747.jpeg","_date":{"year":2026,"month":4,"day":13},"openVenue":"17:00","startTime":"18:00","venueName":"『NIGHT PARADE 2026 in Osaka』｜Zepp Namba(OSAKA)","ticketType":"前物販参加券","prefix":"X",eventInfo: ""};
         const ticketInfo = {
             ...ticketInfoBase,
-            favoriteName: "ティラミス",
-            holderName: "川島省吾",
+            favoriteName: "",
+            holderName: "",
         }
     </script>
     <script>
@@ -749,7 +749,7 @@
             startTime.textContent = ticketInfo.startTime;
             holderName.textContent = ticketInfo.holderName;
             favoriteName.textContent = ticketInfo.favoriteName;
-            referenceNumber.textContent = `${ticketInfo.prefix}-${String(OtkRef.i.number)}`;
+            referenceNumber.textContent = `${ticketInfo.prefix}‐${String(OtkRef.i.number)}`;
             ticketWrapper.style.backgroundColor = ticketInfo.color.sub;
             referenceNumberContainer.style.backgroundColor = ticketInfo.color.main;
             entryButton.style.backgroundColor = ticketInfo.color.main;
@@ -805,7 +805,7 @@
                 const newNumber = OtkRef.i.number + incremental;
                 OtkRef.i.number = newNumber > 0 ? newNumber : 1;
 
-                referenceNumber.textContent = `${ticketInfo.prefix}-${String(OtkRef.i.number)}`;
+                referenceNumber.textContent = `${ticketInfo.prefix}‐${String(OtkRef.i.number)}`;
             });
 
             // 入場ボタン動作
